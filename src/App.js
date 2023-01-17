@@ -54,8 +54,9 @@ function App() {
               </button>
             </div>
 
-            <p id="result" className="flex justify-center"></p>
+           
           </div>
+          <p id="result" className="flex justify-center"></p>
         </div>
       </div>
       <div className="flex justify-center mt-4">
