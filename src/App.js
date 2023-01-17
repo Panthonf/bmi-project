@@ -1,11 +1,23 @@
 import "./App.css";
 import BMI from "./component/bmi";
 import React from 'react';
+import logo1 from './img/logo1.png'
+import logo2 from './img/logo2.png'
 
 function App() {
   return (
     
-      <div className="flex justify-center font-prompt">
+    
+      <div>
+        <div className="flex justify-start mt-4 ml-8">
+          <img src={logo1} alt="Girl in a jacket" className="mx-2 h-32 my-auto"></img>
+          <img src={logo2} alt="Girl in a jacket" className="h-36 my-auto"></img>
+        </div>
+        <div className="font-prompt mt-2 text-blue-900">
+          <h1 className="flex justify-center text-xl">สถาบันพระบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์</h1>
+          <h1 className="flex justify-center text-lg">สถาบันบรมราชนก</h1>
+        </div>
+        <div className="flex justify-center font-prompt">
       <div className="mt-8 max-w-min p-8 rounded-lg shadow-lg">
         <div className="font text-blue-700 font-sans">
           <h2 className="font-bold flex justify-center text-xl">คำนวณค่าดัชนีมวลกาย (BMI)</h2>
@@ -40,6 +52,7 @@ function App() {
         </div>
       </div>
     </div>
+      </div>
     
   );
 }
