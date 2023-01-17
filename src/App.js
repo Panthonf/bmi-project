@@ -13,10 +13,10 @@ function App() {
         <img src={logo2} alt="logo2" className="h-20 mt-8 my-auto"></img>
       </div>
       <div className="font-prompt mt-2 text-blue-900">
-        <h1 className="flex justify-center text-base mx-2">
+        <h1 className="flex justify-center text-sm mx-2 sm:text-base">
           วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
         </h1>
-        <h1 className="flex justify-center text-sm">สถาบันพระบรมราชชนก</h1>
+        <h1 className="flex justify-center text-xs sm:text-sm">สถาบันพระบรมราชชนก</h1>
       </div>
       <div className="flex justify-center font-prompt">
         <div className="mt-4 max-w-min py-4 px-16 rounded-lg shadow">
