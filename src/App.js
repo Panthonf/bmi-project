@@ -1,9 +1,11 @@
 import "./App.css";
 import BMI from "./component/bmi";
+import React from 'react';
 
 function App() {
   return (
-    <div className="flex justify-center font-prompt">
+    
+      <div className="flex justify-center font-prompt">
       <div className="mt-8 max-w-min p-8 rounded-lg shadow-lg">
         <div className="font text-blue-700 font-sans">
           <h2 className="font-bold flex justify-center text-xl">คำนวณค่าดัชนีมวลกาย (BMI)</h2>
@@ -38,6 +40,7 @@ function App() {
         </div>
       </div>
     </div>
+    
   );
 }
 
