@@ -9,20 +9,23 @@ function App() {
   return (
     <div className="mb-4">
       <div className="flex justify-center mt-4 ml-8">
-        <img src={logo1} alt="logo1" className="mx-2 h-24 my-auto"></img>
-        <img src={logo2} alt="logo2" className="h-28 my-auto"></img>
+        <img src={logo1} alt="logo1" className="mx-2 h-20 my-auto"></img>
+        <img src={logo2} alt="logo2" className="h-24 my-auto"></img>
       </div>
       <div className="font-prompt mt-2 text-blue-900">
-        <h1 className="flex justify-center text-xl">
+        <h1 className="flex justify-center text-base">
           สถาบันพระบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
         </h1>
-        <h1 className="flex justify-center text-lg">สถาบันบรมราชชนก</h1>
+        <h1 className="flex justify-center text-sm">สถาบันบรมราชชนก</h1>
       </div>
       <div className="flex justify-center font-prompt">
-        <div className="mt-4 max-w-min p-8 rounded-lg shadow">
+        <div className="mt-4 max-w-min py-4 px-16 rounded-lg shadow">
           <div className="font text-blue-700 font-sans">
-            <h2 className="font-bold flex justify-center text-xl">
-              คำนวณค่าดัชนีมวลกาย (Body Mass Index)
+            <h2 className="font-bold flex justify-center text-base text-center">
+              คำนวณค่าดัชนีมวลกาย
+            </h2>
+            <h2 className="font-bold flex justify-center text-base text-center">
+              (Body Mass Index)
             </h2>
             <p class="text" className="mt-4">
               ส่วนสูง (เมตร)
@@ -55,8 +58,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-2">
-        <img src={bmi1} alt="bmi-level" className="h-96 rounded-md"></img>
+      <div className="flex justify-center mt-2 mx-2">
+        <img src={bmi1} alt="bmi-level" className="w-100 rounded-md"></img>
       </div>
     </div>
   );
