@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="font-prompt mt-2 text-blue-900">
         <h1 className="flex justify-center text-sm mx-2 sm:text-base">
-          วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
+          วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์ hh
         </h1>
         <h1 className="flex justify-center text-xs sm:text-sm">สถาบันพระบรมราชชนก</h1>
       </div>
