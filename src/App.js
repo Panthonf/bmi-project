@@ -11,11 +11,11 @@ function App() {
       <div>
         <div className="flex justify-start mt-4 ml-8">
           <img src={logo1} alt="Girl in a jacket" className="mx-2 h-32 my-auto"></img>
-          <img src={logo2} alt="Girl in a jacket" className="h-36 my-auto"></img>
+          <img src={logo2} alt="Girl in a jacket" className="h-40 my-auto"></img>
         </div>
         <div className="font-prompt mt-2 text-blue-900">
           <h1 className="flex justify-center text-xl">สถาบันพระบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์</h1>
-          <h1 className="flex justify-center text-lg">สถาบันบรมราชนก</h1>
+          <h1 className="flex justify-center text-lg">สถาบันบรมราชชนก</h1>
         </div>
         <div className="flex justify-center font-prompt">
       <div className="mt-8 max-w-min p-8 rounded-lg shadow-lg">
