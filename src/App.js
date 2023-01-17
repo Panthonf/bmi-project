@@ -14,7 +14,7 @@ function App() {
       </div>
       <div className="font-prompt mt-2 text-blue-900">
         <h1 className="flex justify-center text-sm mx-2 sm:text-base">
-          วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์ hh
+          วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
         </h1>
         <h1 className="flex justify-center text-xs sm:text-sm">สถาบันพระบรมราชชนก</h1>
       </div>
@@ -62,10 +62,7 @@ function App() {
       <div className="flex justify-center mt-4">
         <img src={bmi1} alt="bmi-level" className="w-96 rounded-md"></img>
       </div>
-      <div className="flex justify-center mt-4">
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-da37b860-3bfa-4153-a3c6-587ca136b651"></div>
-        </div>
+      jhgg
     </div>
   );
 }
