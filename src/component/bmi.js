@@ -10,6 +10,7 @@ export default function BMI() {
     document.getElementById("result").innerHTML =
       "! กรุณาใส่ส่วนสูงและนำ้หนักให้ครบถ้วน";
   }else {
+    document.getElementById("result").style.color = "blue";
     document.getElementById("result").innerHTML =
       "ดัชนีมวลกายของคุณ คือ " + bmio;
   }
