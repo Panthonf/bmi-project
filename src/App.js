@@ -28,19 +28,19 @@ function App() {
               (Body Mass Index)
             </h2>
             <p class="text" className="mt-4">
-              ส่วนสูง (เมตร)
-            </p>
-            <input
-              type="text"
-              id="h"
-              className="my-2 rounded-md border-2 border-blue-300 p-2"
-            />
-            <p class="text" className="mt-2">
               นำ้หนัก (กิโลกรัม)
             </p>
             <input
               type="text"
               id="w"
+              className="my-2 rounded-md border-2 border-blue-300 p-2"
+            />
+            <p class="text" className="mt-4">
+              ส่วนสูง (เมตร)
+            </p>
+            <input
+              type="text"
+              id="h"
               className="my-2 rounded-md border-2 border-blue-300 p-2"
             />
 
@@ -58,8 +58,8 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-2 mx-2">
-        <img src={bmi1} alt="bmi-level" className="w-100 rounded-md"></img>
+      <div className="flex justify-center mt-4 mx-52">
+        <img src={bmi1} alt="bmi-level" className="w-96 rounded-md"></img>
       </div>
     </div>
   );
