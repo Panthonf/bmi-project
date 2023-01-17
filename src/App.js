@@ -62,6 +62,11 @@ function App() {
       <div className="flex justify-center mt-4">
         <img src={bmi1} alt="bmi-level" className="w-96 rounded-md"></img>
       </div>
+      <div>
+        <!-- Badge Code - Do Not Change The Code -->
+<a class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="23bb813bb9a3324f7d9e6b7a0a2dd6b2|5|external|1|#3a87fe|#ffffff|small|s-hit">Hit Counter</a><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
+<!-- Badge Code End Here -->
+        </div>
     </div>
   );
 }
