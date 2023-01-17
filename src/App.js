@@ -9,14 +9,14 @@ function App() {
   return (
     <div className="mb-4">
       <div className="flex justify-center mt-4 ml-8">
-        <img src={logo1} alt="logo1" className="mx-2 h-20 my-auto"></img>
-        <img src={logo2} alt="logo2" className="h-24 my-auto"></img>
+        <img src={logo1} alt="logo1" className="mx-2 h-16 my-auto"></img>
+        <img src={logo2} alt="logo2" className="h-20 mt-4 my-auto"></img>
       </div>
       <div className="font-prompt mt-2 text-blue-900">
         <h1 className="flex justify-center text-base">
-          สถาบันพระบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
+          วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
         </h1>
-        <h1 className="flex justify-center text-sm">สถาบันบรมราชชนก</h1>
+        <h1 className="flex justify-center text-sm">สถาบันพระบรมราชชนก</h1>
       </div>
       <div className="flex justify-center font-prompt">
         <div className="mt-4 max-w-min py-4 px-16 rounded-lg shadow">
