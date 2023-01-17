@@ -21,7 +21,7 @@ function App() {
       <div className="flex justify-center font-prompt">
         <div className="mt-4 max-w-min py-4 px-16 rounded-lg shadow">
           <div className="font text-blue-700 font-sans">
-            <h2 className="font-bold flex justify-center text-base text-center">
+            <h2 className="font-bold flex justify-center text-lg text-center">
               คำนวณค่าดัชนีมวลกาย
             </h2>
             <h2 className="font-bold flex justify-center text-base text-center">
