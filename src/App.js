@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="mb-4">
       <div className="flex justify-center mt-4 ml-8">
-        <img src={logo1} alt="logo1" className="mx-2 h-16 my-auto"></img>
-        <img src={logo2} alt="logo2" className="h-20 mt-4 my-auto"></img>
+        <img src={logo1} alt="logo1" className="mx-2 h-20 my-auto"></img>
+        <img src={logo2} alt="logo2" className="h-20 mt-8 my-auto"></img>
       </div>
       <div className="font-prompt mt-2 text-blue-900">
         <h1 className="flex justify-center text-base">
