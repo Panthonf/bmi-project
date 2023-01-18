@@ -3,7 +3,7 @@ export default function BMI() {
   var w = document.getElementById("w").value;
 
   var bmi = w / (((h / 100) * h) / 100);
-  var bmio = bmi.toFixed(1);
+  var bmio = bmi.toFixed(2);
   console.log(bmio);
   if (h.length === 0 || w.length === 0) {
     document.getElementById("result").style.color = "red";
@@ -22,9 +22,9 @@ export default function BMI() {
       document.getElementById("level2").innerHTML = "ระดับสีเขียวอ่อน";
       document.getElementById("level").innerHTML = "อยู่ในเกณฑ์ ผอม";
     } else if (bmio >= 18.5 && bmio <= 22.9) {
-      document.getElementById("level2").innerHTML = "";
+      document.getElementById("level2").innerHTML = "ระดับสีขาว";
       document.getElementById("level").innerHTML =
-        "อยู่ในเกณฑ์ นำ้หนักปกติ ระดับสีขาว";
+        "อยู่ในเกณฑ์ นำ้หนักปกติ";
     } else if (bmio >= 23.0 && bmio <= 24.9) {
       document.getElementById("level2").innerHTML = "ระดับสีเหลือง";
       document.getElementById("level").innerHTML = "อยู่ในเกณฑ์ นำ้หนักเกิน";
