@@ -58,6 +58,7 @@ function App() {
           </div>
           <p id="result" className="flex justify-center"></p>
           <p id="level" className="flex justify-center mt-2 font-semibold "></p>
+          <p id="level2" className="flex justify-center mt-2 font-semibold "></p>
         </div>
       </div>
       <div className="flex justify-center mt-4">
