@@ -36,7 +36,7 @@ function App() {
               className="my-2 rounded-md border-2 border-blue-300 p-2"
             />
             <p class="text" className="mt-4">
-              ส่วนสูง (เมตร)
+              ส่วนสูง (เซนติเมตร)
             </p>
             <input
               type="text"
@@ -57,6 +57,7 @@ function App() {
            
           </div>
           <p id="result" className="flex justify-center"></p>
+          <p id="level" className="flex justify-center mt-2 font-semibold "></p>
         </div>
       </div>
       <div className="flex justify-center mt-4">
