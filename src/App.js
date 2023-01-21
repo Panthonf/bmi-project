@@ -123,7 +123,7 @@ function App() {
               />
             </div>
 
-            <div className="mt-4">
+            {/* <div className="mt-4">
               <label>รูปภาพจำนวนก้าวเดินจากแอพพลิเคชั่น</label>
             </div>
             <div className="mt-2">
@@ -134,7 +134,7 @@ function App() {
                 onChange={(e)=>setWalkPic(e.target.value)} value={walkPic}
                 // onChange={(e)=>setWalkPic(e.target.value)} value={walkPic} 
               />
-            </div>
+            </div> */}
 
             <div className="mt-4">
               <label>จำนวนการกินข้าว (ทัพพี)</label>
