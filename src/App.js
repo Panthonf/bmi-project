@@ -1,11 +1,40 @@
 import "./App.css";
 import BMI from "./component/bmi";
-import React from "react";
+import React, { useState } from "react";
 import logo1 from "./img/logo1.png";
 import logo2 from "./img/logo2.png";
 import bmi1 from "./img/bmi1.jpg";
-
+// import SubForm from "./component/subForm";
+import axios from "axios";
 function App() {
+
+  //form states
+  const [name,setName] = useState('');
+  const [walkCount,setWalkCount] = useState('');
+  const [walkPic,setWalkPic] = useState([]);
+  const [riceCount,setRiceCount] = useState('');
+
+  //submit event
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    const data={
+      Name:name,
+      WalkCount:walkCount,
+      WalkPic:walkPic,
+      RiceCount:riceCount
+    }
+    axios.post('https://sheet.best/api/sheets/764593b1-1d27-45d1-a937-dc456abd7216',data).then((response)=>{
+      console.log(response);
+      // clearing form fields
+      setName('');
+      setWalkCount('');
+      setWalkPic([]);
+      setRiceCount('');
+    })
+    console.log(name,walkCount,walkPic,riceCount);
+  }
+ 
+
   return (
     <div className="mb-4">
       <div className="flex justify-center mt-4 ml-8">
@@ -16,7 +45,9 @@ function App() {
         <h1 className="flex justify-center text-sm mx-2 sm:text-base">
           วิทยาลัยพยาบาลบรมราชชนนีสวรรค์ประชารักษ์ นครสวรรค์
         </h1>
-        <h1 className="flex justify-center text-xs sm:text-sm">สถาบันพระบรมราชชนก</h1>
+        <h1 className="flex justify-center text-xs sm:text-sm">
+          สถาบันพระบรมราชชนก
+        </h1>
       </div>
       <div className="flex justify-center font-prompt">
         <div className="mt-4 max-w-min py-4 px-16 rounded-lg shadow">
@@ -53,21 +84,84 @@ function App() {
                 คำนวณ
               </button>
             </div>
-
-           
           </div>
           <p id="result" className="flex justify-center"></p>
           <p id="level" className="flex justify-center mt-2 font-semibold "></p>
-          <p id="level2" className="flex justify-center mt-2 font-semibold "></p>
+          <p
+            id="level2"
+            className="flex justify-center mt-2 font-semibold "
+          ></p>
         </div>
       </div>
+
+      {/* Input Walk_count and rice_count */}
+      <div className="flex justify-center">
+        <div className="mt-4 max-w-min py-4 px-16 rounded-lg shadow">
+          <diV className="my-2 text-xl font-semibold font-prompt text-blue-700 text-center">
+            <p>รายงานข้อมูล</p>
+          </diV>
+          <form id="myForm" className="text-bold font-prompt text-blue-700">
+            <div className="text-left">
+              <label>ชื่อ นามสกุล</label>
+            </div>
+            <div className="mt-2">
+              <input
+                name="full_name"
+                className="border-2 rounded-md border-blue-400"
+                onChange={(e)=>setName(e.target.value)} value={name}
+              />
+            </div>
+            <div className="mt-4">
+              <label>จำนวนก้าวเดิน</label>
+            </div>
+            <div className="mt-2">
+              <input
+                name="walk_count"
+                type="number"
+                className="border-2 rounded-md border-blue-400"
+                onChange={(e)=>setWalkCount(e.target.value)} value={walkCount}
+              />
+            </div>
+
+            <div className="mt-4">
+              <label>รูปภาพจำนวนก้าวเดินจากแอพพลิเคชั่น</label>
+            </div>
+            <div className="mt-2">
+              <input
+                name="walk_count_pic"
+                type="file"
+                className="border-2 rounded-md border-blue-400 w-52"
+                onChange={(e)=>setWalkPic(e.target.value)} value={walkPic}
+                // onChange={(e)=>setWalkPic(e.target.value)} value={walkPic} 
+              />
+            </div>
+
+            <div className="mt-4">
+              <label>จำนวนการกินข้าว (ทัพพี)</label>
+            </div>
+            <div className="mt-2">
+              <input
+                name="rice_count"
+                type="number"
+                className="border-2 rounded-md border-blue-400"
+                onChange={(e)=>setRiceCount(e.target.value)} value={riceCount}
+              />
+            </div>
+          </form>
+          <div className="flex justify-center mt-4">
+            <button
+              onClick={handleSubmit}
+              className="p-2 bg-blue-500 font-prompt text-lg text-white rounded-md"
+            >
+              ส่งข้อมูล
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div className="flex justify-center mt-4">
         <img src={bmi1} alt="bmi-level" className="w-96 rounded-md"></img>
       </div>
-      <div className="flex justify-center mt-2">
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-da37b860-3bfa-4153-a3c6-587ca136b651"></div>
-        </div>
     </div>
   );
 }
