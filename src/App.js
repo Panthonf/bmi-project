@@ -4,7 +4,6 @@ import React from "react";
 import logo1 from "./img/logo1.png";
 import logo2 from "./img/logo2.png";
 import bmi1 from "./img/bmi1.jpg";
-import { Link } from "react-router-dom";
 
 
 function App() {
