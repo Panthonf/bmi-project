@@ -73,7 +73,6 @@ function App() {
       <div className="flex justify-center mt-4">
         <img src={bmi1} alt="bmi-level" className="w-96 rounded-md"></img>
       </div>
-      <div className="flex justify-center mt-2 font-prompt text-gray-500 italic underline"><Link to="/report">รายงานข้อมูล</Link></div>
     </div>
   );
 }
