@@ -68,7 +68,6 @@ function App() {
           ></p>
         </div>
       </div>
-
       
       <div className="flex justify-center mt-4">
         <img src={bmi1} alt="bmi-level" className="w-96 rounded-md"></img>
